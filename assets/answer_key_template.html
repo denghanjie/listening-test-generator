@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}} - Answer Key</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Georgia, serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px double #c0392b;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #c0392b;
+        }
+        .header h2 {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            font-weight: normal;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        .section-header {
+            background: #c0392b;
+            color: white;
+            padding: 8px 15px;
+            margin: 0;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px 10px;
+            text-align: left;
+            font-size: 13px;
+        }
+        th {
+            background: #f5f5f5;
+            font-weight: bold;
+        }
+        .num { width: 40px; text-align: center; }
+        .answer { color: #c0392b; font-weight: bold; width: 200px; }
+        .meaning { color: #555; font-size: 12px; }
+        .source { width: 100px; text-align: center; }
+        .grading-guide {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .grading-guide h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{title}} &mdash; ANSWER KEY</h1>
+        <h2>Teacher's Copy &mdash; Do Not Distribute to Students</h2>
+    </div>
+    <div class="grading-guide">
+        <h3>Grading Guide</h3>
+        <ul>
+            <li>Total points: {{total_points}}</li>
+            <li>Exact spelling required for dictation sections; accept minor variations if meaning is clear.</li>
+            <li>For sentence completion, the correct word/phrase must fit the context.</li>
+        </ul>
+    </div>
+    {{sections}}
+    <div style="text-align:center; margin-top:30px; font-size:12px; color:#777;">Answer Key generated automatically from test content.</div>
+</body>
+</html>
